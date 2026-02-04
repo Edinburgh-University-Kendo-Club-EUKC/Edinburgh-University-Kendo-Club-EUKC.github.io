@@ -3,148 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gallery of Edinburgh University Kendo Club - Photos from our events and practices.">
     <title>Gallery - Edinburgh University Kendo Club</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header class="bg-dark text-white p-3 text-center" style="font-weight: bold;">
-        <div class="container">
-            <div class="d-flex align-items-center">
-                <img src="images/logo.png" alt="Club Logo" class="mb-2">
-                <span class="ms-2" style ="font-size: 1.5rem; padding-left: 2%;">Edinburgh University Kendo Club (EUKC)</span>
-            </div>            
-            <nav class="nav justify-content-center">
-                <a class="nav-link text-white" href="index.html">Home</a>
-                <a class="nav-link text-white" href="about.html">About</a>
-                <a class="nav-link text-white" href="contact.html">Contact</a>
-                <a class="nav-link text-white" href="meet-the-committee.html">Meet the Committee</a>
-                <a class="nav-link text-white" href="gallery.html">Gallery</a>
-                <a class="nav-link text-white" href="events-and-information.html">Events & Info</a>
-            </nav>
-        </div>
-    </header>
+    <!-- Header Component (loaded via JavaScript) -->
+    <div id="header-placeholder"></div>
     
-    <main class="container mt-4">
-        <h1>Gallery</h1>
-        <p>Explore moments from our recent events and practices.</p>
-<!--        &lt;!&ndash; First Carousel &ndash;&gt;-->
-<!--        <div id="galleryCarousel1" class="carousel slide" data-bs-ride="carousel">-->
-<!--            &lt;!&ndash; Indicators/dots &ndash;&gt;-->
-<!--            <div class="carousel-indicators">-->
-<!--                <button type="button" data-bs-target="#galleryCarousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>-->
-<!--                <button type="button" data-bs-target="#galleryCarousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>-->
-<!--                <button type="button" data-bs-target="#galleryCarousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>-->
-<!--            </div>-->
-<!--            &lt;!&ndash; The slideshow/carousel &ndash;&gt;-->
-<!--            <div class="carousel-inner">-->
-<!--                <div class="carousel-item active">-->
-<!--                    <img src="images/gallery1.jpg" alt="Img 1" class="d-block w-100">-->
-<!--                </div>-->
-<!--                <div class="carousel-item">-->
-<!--                    <img src="images/gallery2.jpg" alt="Img 2" class="d-block w-100">-->
-<!--                </div>-->
-<!--                <div class="carousel-item">-->
-<!--                    <img src="images/gallery3.jpg" alt="Img 3" class="d-block w-100">-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            &lt;!&ndash; Left and right controls/icons &ndash;&gt;-->
-<!--            <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel1" data-bs-slide="prev">-->
-<!--                <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
-<!--                <span class="visually-hidden">Previous</span>-->
-<!--            </button>-->
-<!--            <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel1" data-bs-slide="next">-->
-<!--                <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
-<!--                <span class="visually-hidden">Next</span>-->
-<!--            </button>-->
-<!--        </div> -->
-<!--    -->
-<!--        &lt;!&ndash; Second Carousel &ndash;&gt;-->
-<!--        <div id="galleryCarousel2" class="carousel slide" data-bs-ride="carousel">-->
-<!--            &lt;!&ndash; Indicators/dots &ndash;&gt;-->
-<!--            <div class="carousel-indicators">-->
-<!--                <button type="button" data-bs-target="#galleryCarousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>-->
-<!--                <button type="button" data-bs-target="#galleryCarousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>-->
-<!--                <button type="button" data-bs-target="#galleryCarousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>-->
-<!--            </div>-->
-<!--            &lt;!&ndash; The slideshow/carousel &ndash;&gt;-->
-<!--            <div class="carousel-inner">-->
-<!--                <div class="carousel-item active">-->
-<!--                    <img src="images/gallery1.jpg" alt="Img 1" class="d-block w-100">-->
-<!--                </div>-->
-<!--                <div class="carousel-item">-->
-<!--                    <img src="images/gallery2.jpg" alt="Img 2" class="d-block w-100">-->
-<!--                </div>-->
-<!--                <div class="carousel-item">-->
-<!--                    <img src="images/gallery3.jpg" alt="Img 3" class="d-block w-100">-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            &lt;!&ndash; Left and right controls/icons &ndash;&gt;-->
-<!--            <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel2" data-bs-slide="prev">-->
-<!--                <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
-<!--                <span class="visually-hidden">Previous</span>-->
-<!--            </button>-->
-<!--            <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel2" data-bs-slide="next">-->
-<!--                <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
-<!--                <span class="visually-hidden">Next</span>-->
-<!--            </button>-->
-<!--        </div>-->
-<!--    -->
-<!--        &lt;!&ndash; Third Carousel &ndash;&gt;-->
-<!--        <div id="galleryCarousel3" class="carousel slide" data-bs-ride="carousel">-->
-<!--            &lt;!&ndash; Indicators/dots &ndash;&gt;-->
-<!--            <div class="carousel-indicators">-->
-<!--                <button type="button" data-bs-target="#galleryCarousel3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>-->
-<!--                <button type="button" data-bs-target="#galleryCarousel3" data-bs-slide-to="1" aria-label="Slide 2"></button>-->
-<!--                <button type="button" data-bs-target="#galleryCarousel3" data-bs-slide-to="2" aria-label="Slide 3"></button>-->
-<!--            </div>-->
-<!--            &lt;!&ndash; The slideshow/carousel &ndash;&gt;-->
-<!--            <div class="carousel-inner">-->
-<!--                <div class="carousel-item active">-->
-<!--                    <img src="images/gallery1.jpg" alt="Img 1" class="d-block w-100">-->
-<!--                </div>-->
-<!--                <div class="carousel-item">-->
-<!--                    <img src="images/gallery2.jpg" alt="Img 2" class="d-block w-100">-->
-<!--                </div>-->
-<!--                <div class="carousel-item">-->
-<!--                    <img src="images/gallery3.jpg" alt="Img 3" class="d-block w-100">-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            &lt;!&ndash; Left and right controls/icons &ndash;&gt;-->
-<!--            <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel3" data-bs-slide="prev">-->
-<!--                <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
-<!--                <span class="visually-hidden">Previous</span>-->
-<!--            </button>-->
-<!--            <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel3" data-bs-slide="next">-->
-<!--                <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
-<!--                <span class="visually-hidden">Next</span>-->
-<!--            </button>-->
-<!--        </div>-->
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>  
-    </main>  
-
-    <footer class="bg-dark text-white text-center p-3 mt-4 fixed-bottom">
+    <main class="main-content">
         <div class="container">
-            <p style="font-size: 1.0rem; font-weight:bold;">Copyright © EUKC</p>
-            <p>
+            <header class="page-header">
+                <h1>Gallery</h1>
+                <p class="lead-text">Explore moments from our recent events and practices.</p>
+            </header>
 
-                <!-- Icons -->
-                <a href="https://youtube.com/@edinburghuniversitykendoclub?si=kBFyVivSa1io82l0" class="text-white ms-3" target="_blank" style="text-decoration: none;">
-                    <i class="fab fa-youtube"></i>
-                </a>
-                <a href="https://www.instagram.com/eukendo?igsh=MW1ibTFiNndjamR0bQ==" class="text-white ms-3" target="_blank" style="text-decoration: none;">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.facebook.com/EdinburghUniKendo" class="text-white ms-3" target="_blank" style="text-decoration: none;">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                
-            </p>     
+            <!-- Gallery Section -->
+            <section class="content-section">
+                <div class="image-gallery">
+                    <figure class="gallery-item">
+                        <img src="images/uk-uni-taikai-2023-24/img1.jpg" alt="EUKC members at UK Universities Kendo Championship 2023-24" loading="lazy">
+                        <figcaption class="gallery-caption">UK Universities Taikai 2023-24</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="images/uk-uni-taikai-2023-24/img2.jpg" alt="Kendo match at UK Universities tournament" loading="lazy">
+                        <figcaption class="gallery-caption">UK Universities Taikai 2023-24</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="images/uk-uni-taikai-2023-24/img3.jpg" alt="Team photo UK Universities Kendo" loading="lazy">
+                        <figcaption class="gallery-caption">UK Universities Taikai 2023-24</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="images/uk-uni-taikai-2023-24/img4.jpg" alt="Kendo competition moment" loading="lazy">
+                        <figcaption class="gallery-caption">UK Universities Taikai 2023-24</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="images/uk-uni-taikai-2023-24/img5.jpg" alt="EUKC members at tournament" loading="lazy">
+                        <figcaption class="gallery-caption">UK Universities Taikai 2023-24</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="images/scot-uni-taikai-2023-24/img1.jpg" alt="Scottish Universities Taikai 2023-24" loading="lazy">
+                        <figcaption class="gallery-caption">Scottish Universities Taikai 2023-24</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="images/scot-uni-taikai-2023-24/img2.jpg" alt="Kendo practice at Scottish tournament" loading="lazy">
+                        <figcaption class="gallery-caption">Scottish Universities Taikai 2023-24</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="images/kata-in-the-meadows-summer-24/img1.jpg" alt="Outdoor kata practice in the Meadows Edinburgh" loading="lazy">
+                        <figcaption class="gallery-caption">Kata in the Meadows - Summer 2024</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="images/kata-in-the-meadows-summer-24/img2.jpg" alt="Kendo kata demonstration Edinburgh Meadows" loading="lazy">
+                        <figcaption class="gallery-caption">Kata in the Meadows - Summer 2024</figcaption>
+                    </figure>
+                </div>
+            </section>
         </div>
-    </footer>
-    
+    </main>
+
+    <!-- Footer Component (loaded via JavaScript) -->
+    <div id="footer-placeholder"></div>
+
+    <script src="assets/js/components.js"></script>
 </body>
 </html>
+
